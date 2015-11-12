@@ -22,4 +22,5 @@
                    :all (fn [_] true)}
   :jar-exclusions [#"log4j.xml"
                    #"logback.xml"]
-  :jvm-opts ["-Dvbox.home=/Applications/VirtualBox.app/Contents/MacOS"])
+  :jvm-opts ["-Dvbox.home=/Applications/VirtualBox.app/Contents/MacOS"
+             "-Djava.library.path=%PATH%:/Applications/VirtualBox.app/Contents/MacOS"])
