@@ -5,7 +5,7 @@
        :xpcom
        (catch Exception e
          (try
-           (import 'org.virtualbox_4_3.jaxws.IVirtualBoxCreateHardDisk)
+           (import 'org.virtualbox_5_0.jaxws.IVirtualBoxCreateHardDisk)
            :ws
            (catch Exception e
              :error)))))
@@ -15,4 +15,3 @@
 (defmacro evaluate-when [b & body]
   (when (= (vbox-binding) b)
     `(do ~@body)))
-

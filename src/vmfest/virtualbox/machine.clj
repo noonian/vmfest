@@ -9,7 +9,7 @@
         [vmfest.virtualbox.system-properties :only [system-properties]]
         [clojure.string :only [blank?]]
         [slingshot.slingshot :only [throw+]])
-  (:import [org.virtualbox_4_3 IMachine IConsole VBoxException ISession
+  (:import [org.virtualbox_5_0 IMachine IConsole VBoxException ISession
             VirtualBoxManager IVirtualBox IMedium NetworkAttachmentType
             IStorageController INetworkAdapter IProgress
             IHostNetworkInterface INATEngine ChipsetType]

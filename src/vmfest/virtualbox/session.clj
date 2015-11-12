@@ -6,7 +6,7 @@ destruction of sessions with the VBox servers"
             [vmfest.virtualbox.model :as model]
             [vmfest.virtualbox.enums :as enums])
   (:use [vmfest.virtualbox.version :only [xpcom? vbox-binding]])
-  (:import [org.virtualbox_4_3
+  (:import [org.virtualbox_5_0
             VirtualBoxManager
             IVirtualBox
             VBoxException

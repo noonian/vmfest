@@ -1,7 +1,7 @@
 (ns vmfest.virtualbox.enums
   (:require [clojure.tools.logging :as log])
   (:import
-   [org.virtualbox_4_3 IMachine MachineState ClipboardMode PointingHIDType
+   [org.virtualbox_5_0 IMachine MachineState ClipboardMode PointingHIDType
     FirmwareType KeyboardHIDType SessionState SessionType StorageBus
     DeviceType NetworkAttachmentType CleanupMode StorageControllerType
     MediumType HostNetworkInterfaceType AccessMode MediumVariant

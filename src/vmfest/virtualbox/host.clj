@@ -1,5 +1,5 @@
 (ns vmfest.virtualbox.host
-  (:import [org.virtualbox_4_3
+  (:import [org.virtualbox_5_0
             HostNetworkInterfaceType Holder IHost IHostNetworkInterface
             IVirtualBox IDHCPServer])
   (:require [vmfest.virtualbox.conditions :as conditions]

@@ -5,7 +5,7 @@
             [vmfest.virtualbox.enums :as enums]
             vmfest.virtualbox.guest-os-type)
   (:use [vmfest.virtualbox.version :only [xpcom?]])
-  (:import [org.virtualbox_4_3
+  (:import [org.virtualbox_5_0
             VirtualBoxManager
             IMachine
             IMedium

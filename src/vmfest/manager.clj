@@ -24,7 +24,7 @@ machines are stored in ~/.vmfest/nodes ."
             clojure.set)
   (:use [slingshot.slingshot :only [throw+ try+]]
         [vmfest.virtualbox.version :only (xpcom?)])
-  (:import [org.virtualbox_4_3
+  (:import [org.virtualbox_5_0
             SessionState
             HostNetworkInterfaceType
             HostNetworkInterfaceStatus
@@ -35,7 +35,7 @@ machines are stored in ~/.vmfest/nodes ."
            vmfest.virtualbox.model.Machine)
   (:import [java.net NetworkInterface InetAddress]))
 
-(def supported-api-version "4_3")
+(def supported-api-version "5_0")
 
 (defn check-vbox-api-version
   "Checks whether the underlying VirtualBox system provides an API

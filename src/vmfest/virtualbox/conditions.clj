@@ -5,7 +5,7 @@
    [clojure.tools.logging :as log]
    [slingshot.slingshot :refer [try+ throw+]]
    [vmfest.virtualbox.version :refer [evaluate-when]])
-  (:import [org.virtualbox_4_3 VBoxException IVirtualBoxErrorInfo]))
+  (:import [org.virtualbox_5_0 VBoxException IVirtualBoxErrorInfo]))
 
 (defn unsigned-int-to-long [ui]
   (bit-and (long ui) 0xffffffff))
@@ -86,7 +86,7 @@
 
 (evaluate-when
  :ws
- (import '[org.virtualbox_4_3.jaxws
+ (import '[org.virtualbox_5_0.jaxws
            InvalidObjectFaultMsg
            RuntimeFaultMsg
            RuntimeFault])
